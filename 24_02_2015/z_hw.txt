@@ -1,0 +1,14 @@
+Consider a simple restaurant, you have a list of food(e.g. rice, fish, dall etc.)
+You have customer...
+1. Customers have there own choice.
+2. They will ask you for their food choice(by now, take a variable to store customer's choice)
+3. If you have that food, then serve him(I mean, print "Yes sir, you food is ready!");
+4. If you dont have, you just tell him ("Sorry sir, this food is not in our stock. please tell us if you have any other choice")
+
+
+Loop Assignment:
+
+    *
+  * * *
+ * * * *
+* * * * *
