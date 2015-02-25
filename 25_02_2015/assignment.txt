@@ -1,0 +1,7 @@
+====================Assignment on Array==================
+
+1. Traverse array using while and do-while loop
+2. Implement all sort method of array form the sort link of w3schools link: http://www.w3schools.com/php/php_arrays_sort.asp
+3. Insert or add another value to already existing array
+4. Implement the last assignment(restaurant) using array
+5. Don't forget to do the piramid assignment using loop 
