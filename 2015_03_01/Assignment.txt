@@ -1,0 +1,4 @@
+==================Assignment==================
+1. Modify the restaurant program to take the choise form user;
+2. Submit a full registration form
+3. Make some links so that thay can pass value via url
