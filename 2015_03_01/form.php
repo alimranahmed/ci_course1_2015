@@ -5,7 +5,7 @@
 	<title>Registration Form</title>
 </head>
 <body>
-	<form action="success.php" method="GET">
+	<form action="success.php" method="POST">
 		Name: <input type="text" name="full_name">
 		Email: <input type="email" name="email">
 		Password <input type="password" name="password">
