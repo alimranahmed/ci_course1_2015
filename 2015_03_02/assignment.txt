@@ -1,0 +1,13 @@
+For 1:
+1. Create a Calculator class
+2. The class has property number1, number2, result;
+3. Create relevent method of this class like add, sub, div, mul;
+4. Create another method to get the current result.
+5. Make sure that every method works properly.
+
+For 2:
+1. Create a class Database
+2. This class has property nammed username, dbPassword, dbName, hostName, port;
+3. Create getter and setter for all of the property 
+4. Create a method named conenct who just show that "You are now connected" with all property(print all property)"
+5. Create another method called close who just said that "You have closed the db connection"
