@@ -1,0 +1,10 @@
+Assignment to create more dynamic calculator:
+
+1. Create a form with 3 text input and a submit button
+2. Submit the form through POST method in the same page
+3. When chick the submit button check what was inputed
+4. If it was +(plus) then do add operation on these operands if -(minus) then do subtraction.
+5. If invalid operation(e.g. a, b, add, x, 12 etc.) was inputed at operation area, then print "Invalid operator"
+6. The functionality of add/sub/mul or div should be done using the Calculator class assinged on the previous assinment.
+
+Best of luck
