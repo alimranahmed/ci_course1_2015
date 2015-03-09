@@ -1,0 +1,7 @@
+==================Age Calculator==============
+1. Create a class named as AgeCalculator
+2. This calculator has property birthday, yearAge, monthAge;
+3. Implement necessary getter and setter methods.
+4. Create the constructor to insert the birthdate also.
+5. Calculate the age according to the birthdate.
+6. Get input of age form user uing form
