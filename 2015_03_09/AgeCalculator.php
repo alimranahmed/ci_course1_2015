@@ -4,8 +4,7 @@ class AgeCalculator{
 	private $yearAge;
 	private $monthAge;
 
-	public function __construct($birthday){
-		$this->birthday = $birthday;
+	public function __construct(){
 	}
 
 	public function setBirthday($birthday){
