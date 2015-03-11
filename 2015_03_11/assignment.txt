@@ -1,0 +1,7 @@
+============Assignment==================
+1. Complete the mini framework(follow aspect oriented programming)
+	---> Delete with any field not only id;
+	---> Create a readTable($tableName) method and implement it
+2. Add email in the database User table and create delete link to delete each user;
+3. Give a batter look of the form and user table using bootstrap!
+link: http://getbootstrap.com/getting-started/
