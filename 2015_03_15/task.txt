@@ -1,0 +1,4 @@
+1. Create a login form
+2. Check if the use is in db
+3. If he is in db then show a welcome messge
+4. If he isn't in db then show a sorry message
