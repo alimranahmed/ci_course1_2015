@@ -1,0 +1,8 @@
+===========Assignment=================
+1. Create a class named as GeometricObject
+2. It has a property named as area;
+3. Also a method as getArea;
+4. Circle & Rectangle are children class of GeometricObject
+5. Circle has additional property named as radius;
+6. Rectangle has additional properties named as height & width;
+7. Override the method getArea to calculate the proper area;
