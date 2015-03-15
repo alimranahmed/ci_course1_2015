@@ -63,4 +63,11 @@ class Database{
 		$sql = "USE ".$dbName;
 		$this->runQuery($sql);
 	}
+
+	//Read from a table
+	public function readTable($tableName){
+		$sql = "SELECT * FROM ".$tableName;
+		$result = $this->runQuery($sql);
+		return $result;
+	}
 }
