@@ -1,0 +1,4 @@
+============Assignment========
+1. Cerate a table in view
+2. Pass an array of variable of users from controller to view
+3. Show the user list in view table
