@@ -1,0 +1,5 @@
+==============Assignment======
+1. Create an insert form using bootstrap
+2. Make a link "Add user" to that form
+3. Make that form functional to create user and after creating user redirect to home page.
+4. If the user was created successfully then show a message that "User created successfull"
