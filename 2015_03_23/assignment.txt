@@ -1,0 +1,4 @@
+============Assignment==============
+1. Complete the insert functionality
+hints: 	1. Use the joining query
+	2. Make Department as dropdown
