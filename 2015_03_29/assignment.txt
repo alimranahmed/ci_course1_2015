@@ -1,0 +1,4 @@
+============Assignment===========
+1. Hide the delete and edit button when the user isn't logged in.
+
+2. Try to prevent delete when user isn't logged in
