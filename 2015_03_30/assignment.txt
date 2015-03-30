@@ -1,0 +1,4 @@
+===============Assignment===============
+1. A user can edit only his profile but not others.
+2. Admin user can edit and delete any user.
+3. Try the file upload class.
