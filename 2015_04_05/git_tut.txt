@@ -1,0 +1,10 @@
+1. git init -----> initilize the repository
+2. git status -----> to know the status of the local repo
+3. git clone url------> to clone the remote repo on local from the url
+4. git pull ----------> get the updated changes form the repo
+5. git add -------------> add file to git
+6. git commit -m "Your message"------------>commit you changes
+7. git push (e.g. git push origin msater)---------> push you changes on github
+8. git log----------->show the commit log of the repo
+9. git log --oneline -----------> show the commits on one line
+10. git remote add origin url ------------> add the remote repo from url in you git 
