@@ -91,7 +91,7 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Post <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="#">Create Post</a>
+                                <a href="<?php echo base_url('Post/create'); ?>">Create Post</a>
                             </li>
                             <li>
                                 <a href="#">Manage Post</a>
