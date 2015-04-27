@@ -1,0 +1,7 @@
+1. Replace base_url() with site_url() in links(not asset links)--->rokib
+2. Change the icon of navigation bar(use font awesome)----->rokib
+3. Make the login functional(redirect to dashboard after login)---->rokib
+4. Create Registration page---->shoikot
+5. Make registration functional---->shoikot
+6. Post cannot be created without login---->shokot
+7. Post-->CRUD(with login)----->both
