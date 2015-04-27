@@ -10,7 +10,7 @@
                 </h1>
                 <ol class="breadcrumb">
                     <li>
-                        <i class="fa fa-dashboard"></i>  <a href="index.html">Post</a>
+                        <i class="fa fa-newspaper-o"></i>  Post
                     </li>
                     <li class="active">
                         <i class="fa fa-file"></i> Create

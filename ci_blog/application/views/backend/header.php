@@ -85,19 +85,19 @@
                         <a href="<?php echo site_url('Dashboard'); ?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-dashboard"></i> Comment</a>
+                        <a href="#"><i class="fa fa-comments"></i> Comment</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-dashboard"></i> Category</a>
+                        <a href="#"><i class="fa fa-indent"></i> Category</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Post <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-newspaper-o"></i> Post <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="<?php echo site_url('Post/create'); ?>">Create Post</a>
+                                <a href="<?php echo site_url('Post/create'); ?>"><i class="fa fa-file"></i> Create Post</a>
                             </li>
                             <li>
-                                <a href="#">Manage Post</a>
+                                <a href="#"><i class="fa fa-eye"></i> Manage Post</a>
                             </li>
                         </ul>
                     </li>
