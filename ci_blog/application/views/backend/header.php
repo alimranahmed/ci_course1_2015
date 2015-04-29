@@ -97,7 +97,7 @@
                                 <a href="<?php echo site_url('Post/create'); ?>"><i class="fa fa-file"></i> Create Post</a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-eye"></i> Manage Post</a>
+                                <a href="<?php echo site_url('Post/view_post'); ?> "><i class="fa fa-eye"></i> Manage Post</a>
                             </li>
                         </ul>
                     </li>
