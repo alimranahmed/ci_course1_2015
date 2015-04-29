@@ -1,6 +1,9 @@
 <div id="page-wrapper">
     <div class="container-fluid">
-
+    <?php if(isset($loginError)): ?>
+        <div class="text-danger"><?php echo $loginError ?></div>
+    <?php endif ?>
+            
         <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
