@@ -10,7 +10,7 @@ class Login extends CI_Controller{
 			if($user != null){
 				$this->session->set_userdata("user_id", $user->id);
 				$this->session->set_userdata("name", $user->name);
-				redirect(site_url('dashboard'));
+				redirect(site_url('Dashboard'));
 				//echo "You are a valid user";
 			}else{
 				$loginError = "Invalid username or password";
