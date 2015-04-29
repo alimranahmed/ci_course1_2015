@@ -25,5 +25,11 @@ class Login extends CI_Controller{
 		$this->load->view("v_login", $data);
 		
 	}
+	public function loginCheck(){
+		if(!$this->session->userdata("user_id")){
+			$this->session->set_flashdata('errorMsg', 'Unauthorized access');
+			redirect(base_url());
+		}
+	}
 
 }
