@@ -42,7 +42,7 @@
 <!-- BEGIN LOGO -->
 <div class="logo">
 	<a href="">
-	<h2>Login</h2>
+	<h2>My Blog</h2>
 	</a>
 </div>
 <!-- END LOGO -->
@@ -73,11 +73,16 @@
 			<label class="rememberme check">
 			<input type="checkbox" name="remember" value="1"/>Remember </label>
 		</div>
+		<div class="create-account">
+			<p>
+				<a href="<?php echo site_url('registration'); ?>" id="" class="uppercase">Create an account</a>
+			</p>
+		</div>
 	</form>
 	<!-- END LOGIN FORM -->
 </div>
 <div class="copyright">
-	  &copy;2015 .
+	  2015&copy; My blog .
 </div>
 <!-- END LOGIN -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
@@ -103,12 +108,12 @@
 <script src="<?php echo base_url('assets/admin/pages/scripts/login.js');?>" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <script>
-jQuery(document).ready(function() {     
-Metronic.init(); // init metronic core components
-Layout.init(); // init current layout
-Login.init();
-Demo.init();
-});
+	jQuery(document).ready(function() {     
+	Metronic.init(); // init metronic core components
+	Layout.init(); // init current layout
+	Login.init();
+	Demo.init();
+	});
 </script>
 <!-- END JAVASCRIPTS -->
 </body>
