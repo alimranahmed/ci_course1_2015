@@ -5,7 +5,8 @@ class Post extends CI_Controller{
 		$this->load->model("M_post");
 	}
 	public function create(){
-		if($this->session->userdata("user_id")){
+		$this->loginCheck();
+		
 			if(isset($_POST['save'])){
 				$heading = $this->input->post("heading");
 				$body = $this->input->post("body");
@@ -24,9 +25,51 @@ class Post extends CI_Controller{
 			$this->load->view("backend/header");
 			$this->load->view("backend/v_create_post");
 			$this->load->view("backend/footer");
-		}
-		else{
-			redirect(site_url('login'));
+		
+	}
+	public function view_post(){
+
+		$this->loginCheck();
+		
+		$postList = $this->M_post->getAllPost();
+
+		$data = array(
+				"title" => "Home",
+				"posts" => $postList,
+			);
+			
+		$this->load->view("backend/header");
+		$this->load->view("backend/v_view_post", $data);
+		$this->load->view("backend/footer");
+	}
+	public function delete($id){
+		$this->loginCheck();
+		$this->M_post->deletePost($id);
+		
+	}
+	public function edit($id){
+		$this->loginCheck();
+		
+		$fileError = null;
+		$fileName = null;
+	    
+	    echo $fileError;
+			
+			$heading = $this->input->post("heading");
+			$body = $this->input->post("body");
+			$data = array(
+				"heading" => $heading,
+				"body" => $body,
+				);
+			$this->M_post->editPost($data, $id);
+			
+			redirect(site_url('post/view_post'));
+			
+	}
+	public function loginCheck(){
+		if(!$this->session->userdata("user_id")){
+			$this->session->set_flashdata('errorMsg', 'Unauthorized access');
+			redirect(site_url(Login));
 		}
 	}
 }
