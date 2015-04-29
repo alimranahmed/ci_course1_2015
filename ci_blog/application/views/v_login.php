@@ -48,8 +48,11 @@
 <!-- END LOGO -->
 <!-- BEGIN LOGIN -->
 <div class="content">
+	<?php if(isset($loginError)): ?>
+		<div class="text-danger"><?php echo $loginError ?></div>
+	<?php endif ?>
 	<!-- BEGIN LOGIN FORM -->
-	<form class="login-form" action="" method="post">
+	<form class="login-form" action="<?php echo site_url('login')?>" method="post">
 		<h3 class="form-title">Sign In</h3>
 		<div class="alert alert-danger display-hide">
 			<button class="close" data-close="alert"></button>
@@ -66,7 +69,7 @@
 			<input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password"/>
 		</div>
 		<div class="form-actions">
-			<button type="submit" class="btn btn-success uppercase">Login</button>
+			<button type="submit" name="submit" class="btn btn-success uppercase">Login</button>
 			<label class="rememberme check">
 			<input type="checkbox" name="remember" value="1"/>Remember </label>
 		</div>
