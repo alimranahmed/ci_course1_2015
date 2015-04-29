@@ -8,4 +8,7 @@ class M_user extends CI_Model{
 		$this->db->where("password", $password);
 		return $this->db->get()->row();
 	}
+	public function insert($data){
+		$this->db->insert('users',$data);
+	}
 }	
