@@ -49,6 +49,9 @@
 <!-- BEGIN LOGIN -->
 <div class="content">
 	<!-- BEGIN LOGIN FORM -->
+	<?php if(isset($loginError)): ?>
+		<div class="text-danger"><?php echo $loginError ?></div>
+	<?php endif ?>	
 	<form class="login-form" action="<?php echo site_url('login'); ?>" method="post">
 		<h3 class="form-title">Sign In</h3>
 		<div class="alert alert-danger display-hide">
@@ -94,6 +97,9 @@
 	</form>
 	<!-- END FORGOT PASSWORD FORM -->
 	<!-- BEGIN REGISTRATION FORM -->
+	<?php if(isset($errors)): ?>
+		<div class="text-danger"><?php echo $errors ?></div>
+	<?php endif ?>
 	<form class="register-form" action="<?php echo site_url('Registration'); ?>" method="post">
 		<h3>Sign Up</h3>
 		<p class="hint">
