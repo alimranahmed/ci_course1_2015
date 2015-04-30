@@ -4,7 +4,7 @@ class Login extends CI_Controller{
 		$loginError = null;
 		if(isset($_POST["submit"])){
 			$username = $this->input->post("username");
-			$password = $this->input->post("password");
+			$password = md5($this->input->post("password"));
 			$this->load->model("M_user");
 			$user = $this->M_user->checkCredintial($username, $password);
 			if($user != null){
