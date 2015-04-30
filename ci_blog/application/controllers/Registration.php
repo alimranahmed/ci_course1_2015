@@ -38,12 +38,12 @@ class Registration extends CI_Controller{
 					array(
 						'field' => 'password',
 						'label' => 'Password',
-						'rules' => 'required',
+						'rules' => 'required|trim|required',
 					),
 					array(
 		                'field' => 'passconf',
 		                'label' => 'Password Confirmation',
-		                'rules' => 'required|matches[password]'
+		                'rules' => 'trim|required|matches[password]',
 			        ),	
 			);
 			
@@ -52,7 +52,6 @@ class Registration extends CI_Controller{
 			
 			
 			if($this->form_validation->run() != FALSE){
-				//$uploadData=$this->upload->data();
 				
 				
 				$newUser = array(
@@ -63,7 +62,7 @@ class Registration extends CI_Controller{
 					
 				);
 				$this->M_user->insert($newUser);
-				//redirect(base_url());
+				redirect(site_url('login'));
 			}else{
 
 				
