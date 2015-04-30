@@ -62,14 +62,18 @@ class Registration extends CI_Controller{
 					
 				);
 				$this->M_user->insert($newUser);
-				redirect(site_url('login'));
+				
 			}else{
 
 				
 				$errors = validation_errors();
 			}
 		}
-		
+		if(!$errors){
+			redirect(site_url('login'));
+		}
+
+			
 		$data = array(
 			"title" => "User registration",
 			
@@ -77,6 +81,6 @@ class Registration extends CI_Controller{
 		);
 		
 
-		$this->load->view('v_registration',$data);
+		$this->load->view('v_login',$data);
 	}
 }
