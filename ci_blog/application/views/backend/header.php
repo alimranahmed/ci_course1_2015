@@ -88,7 +88,7 @@
                         <a href="#"><i class="fa fa-comments"></i> Comment</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-indent"></i> Category</a>
+                        <a href="<?php echo site_url('category/view_category'); ?>"><i class="fa fa-indent"></i> Category</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-newspaper-o"></i> Post <i class="fa fa-fw fa-caret-down"></i></a>
