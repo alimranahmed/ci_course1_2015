@@ -35,10 +35,9 @@ class Post extends CI_Controller{
 
 		$this->loginCheck();
 		
-			
-		$this->session->userdata("user_id");
+		$id = $this->session->userdata("user_id");
 		
-		$postList = $this->M_post->getAllPost();
+		$postList = $this->M_post->getAllPost($id);
 
 		$data = array(
 				"title" => "Home",
