@@ -6,6 +6,7 @@ class M_post extends CI_Model
 {
 	public function create($data){
 		$this->db->insert("posts",$data);
+		$this->db->join("users","posts.owner=users.id");
 		return $this->db->insert_id();
 	}
 	public function getAllPost(){

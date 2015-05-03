@@ -12,16 +12,20 @@ class Post extends CI_Controller{
 				$body = $this->input->post("body");
 				$tags = $this->input->post("tags");
 				$category = $this->input->post("category");
-				$newPost = [
+				
+				$newPost = array(
 					"heading" => $heading,
 					"body" => $body,
 					"category" => $category,
 					"tags" => $tags,
 					"updated_at" => date("Y:m:d H:i:s"),
-				];
+					"owner" => $this->session->userdata("user_id"),
+					
+				);
 				$this->M_post->create($newPost);
 				$this->session->set_flashdata("successMsg", "Post created successfully!");
 			}
+
 			$this->load->view("backend/header");
 			$this->load->view("backend/v_create_post");
 			$this->load->view("backend/footer");
@@ -31,16 +35,21 @@ class Post extends CI_Controller{
 
 		$this->loginCheck();
 		
+			
+		$this->session->userdata("user_id");
+		
 		$postList = $this->M_post->getAllPost();
 
 		$data = array(
 				"title" => "Home",
 				"posts" => $postList,
+
 			);
 			
 		$this->load->view("backend/header");
 		$this->load->view("backend/v_view_post", $data);
 		$this->load->view("backend/footer");
+
 	}
 	public function delete($id){
 		$this->loginCheck();
