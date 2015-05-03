@@ -24,7 +24,7 @@
         <!-- /.row -->
         <div class="row">
             <div class="col-lg-12">
-                <form method="post" action="<?php echo site_url('post/create')?>">
+                <form method="post" action="<?php echo site_url('post/create');?>">
                     <div class="form-group">
                         <input type="text" class="form-control" name="heading" placeholder="Post Title">
                     </div>
