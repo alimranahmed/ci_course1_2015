@@ -30,7 +30,8 @@
 					<th>Created_at</th>
 					<th>Action</th>
 				</tr>
-			<?php foreach($posts as $post): ?>
+				
+				<?php foreach($posts as $post): ?>
 				<tr class="info">
 					<td><?php echo $post->heading; ?></td>
 					<td><?php echo $post->body; ?></td>
@@ -71,6 +72,7 @@
 				  </div>
 				</div>
 			<?php endforeach ?>
+
 			</table>
 		</div>
 	</div>
