@@ -9,9 +9,10 @@ class M_post extends CI_Model
 		$this->db->join("users","posts.owner=users.id");
 		return $this->db->insert_id();
 	}
-	public function getAllPost(){
+	public function getAllPost($id){
 		$this->db->select();
 		$this->db->from("posts");
+		$this->db->where("owner",$id);
 		return $this->db->get()->result();
 	}
 	public function deletePost($id){
