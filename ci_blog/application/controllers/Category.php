@@ -11,10 +11,10 @@ class Category extends CI_Controller{
 			if(isset($_POST['add'])){
 				$cat_name = $this->input->post("cat_name");
 				
-				$newCat = [
+				$newCat = array(
 					"name" => $cat_name,
 					
-				];
+				);
 				$this->M_category->create($newCat);
 				$this->session->set_flashdata("successMsg", "Category created successfully!");
 			}
