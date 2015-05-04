@@ -53,6 +53,7 @@ class Post extends CI_Controller{
 	public function delete($id){
 		$this->loginCheck();
 		$this->M_post->deletePost($id);
+		redirect(site_url('post/view_post'));
 		
 	}
 	public function edit($id){
