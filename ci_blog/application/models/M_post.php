@@ -25,4 +25,10 @@ class M_post extends CI_Model
 		$this->db->update("posts", $data);
 
 	}
+	public function getAllCategory(){
+		$this->db->select();
+		$this->db->from("categories");
+		return $this->db->get()->result();
+		
+	}
 }
