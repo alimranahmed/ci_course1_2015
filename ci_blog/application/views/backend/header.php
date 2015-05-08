@@ -19,7 +19,6 @@
 
     <!-- Morris Charts CSS -->
     <link href="<?php echo base_url('public/css/plugins/morris.css'); ?>" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="<?php echo base_url('public/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
 
@@ -66,10 +65,10 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $this->session->userdata("name");?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            <a href="<?php echo site_url('profile/view'); ?>"><i class="fa fa-fw fa-user"></i> Profile</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                            <a href="<?php echo site_url('profile/setting'); ?>"><i class="fa fa-fw fa-gear"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
                         <li>
@@ -85,14 +84,15 @@
                         <a href="<?php echo site_url('Dashboard'); ?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-comments"></i> Comment</a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#comment"><i class="fa fa-comments"></i> Comment</i></a>
+                       
                     </li>
                     <li>
                         <a href="<?php echo site_url('category/view_category'); ?>"><i class="fa fa-indent"></i> Category</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-newspaper-o"></i> Post <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#post"><i class="fa fa-newspaper-o"></i> Post <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="post" class="collapse">
                             <li>
                                 <a href="<?php echo site_url('Post/create'); ?>"><i class="fa fa-file"></i> Create Post</a>
                             </li>
