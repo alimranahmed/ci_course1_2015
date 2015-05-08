@@ -67,10 +67,10 @@
 					      <div class="modal-footer">
 					        <button type="submit" class="btn btn-primary">Save changes</button>
 					      </div>
-							</form>
-				    </div>
-				  </div>
-				</div>
+					</form>
+			    </div>
+			  </div>
+			</div>
 			<?php endforeach ?>
 
 			</table>
