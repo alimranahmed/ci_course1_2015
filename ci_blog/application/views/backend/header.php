@@ -84,8 +84,12 @@
                         <a href="<?php echo site_url('Dashboard'); ?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
+<<<<<<< HEAD
                         <a href="javascript:;" data-toggle="collapse" data-target="#comment"><i class="fa fa-comments"></i> Comment</i></a>
                        
+=======
+                        <a href="<?php echo site_url('Comment/view'); ?>"><i class="fa fa-comments"></i> Comment</a>
+>>>>>>> d4d00addfe9712d72f604f9db6546d658262a8e2
                     </li>
                     <li>
                         <a href="<?php echo site_url('category/view_category'); ?>"><i class="fa fa-indent"></i> Category</a>
