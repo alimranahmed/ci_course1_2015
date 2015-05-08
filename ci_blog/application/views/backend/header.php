@@ -85,7 +85,7 @@
                         <a href="<?php echo site_url('Dashboard'); ?>"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-comments"></i> Comment</a>
+                        <a href="<?php echo site_url('Comment/view'); ?>"><i class="fa fa-comments"></i> Comment</a>
                     </li>
                     <li>
                         <a href="<?php echo site_url('category/view_category'); ?>"><i class="fa fa-indent"></i> Category</a>
