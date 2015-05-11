@@ -63,7 +63,32 @@ class Profile extends CI_Controller{
 		$this->session->set_flashdata("successMsg", "Profile Change Successfully!");
 		
 	}
+	public function passwordChange(){
+		$this->loginCheck();
+		
+		$id = $this->session->userdata("user_id");
+		
+		$this->load->view("backend/header");
+		$this->load->view("backend/v_password_change");
+		$this->load->view("backend/footer");
 	
+	}
+	public function editPassword(){
+		$this->loginCheck();
+	    
+	   $id = $this->session->userdata("user_id");
+			
+		
+		$password = md5($this->input->post("password"));
+		
+		$data = array(
+			"password" => $password,
+			);
+		$this->M_user->edit($data, $id);
+		
+		redirect(site_url('login'));
+		
+	}
 
 	public function loginCheck(){
 		if(!$this->session->userdata("user_id")){
