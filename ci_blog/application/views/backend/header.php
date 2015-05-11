@@ -70,6 +70,10 @@
                         <li>
                             <a href="<?php echo site_url('profile/setting'); ?>"><i class="fa fa-fw fa-gear"></i> Settings</a>
                         </li>
+                        <li>
+                            <a href="<?php echo site_url('profile/passwordChange'); ?>"><i class="glyphicon glyphicon-edit"></i> Change Password</a>
+                        </li>
+                        
                         <li class="divider"></li>
                         <li>
                             <a href="<?php echo site_url('logout'); ?>"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
