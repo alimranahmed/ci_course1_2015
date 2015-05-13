@@ -7,14 +7,16 @@
             
                 <div class="post-preview">
                 <?php foreach($posts as $post): ?>
-                    <a href="">
-                        <h2 class="post-title">
+                    
+                        <h2 class="post-title" >
+                        <a href="">
                             <?php echo $post->heading; ?>
+                        </a>    
                         </h2>
-                        <h3 class="post-subtitle">
-                            <?php echo $post->body; ?>
-                        </h3>
-                    </a>
+                        <p class="post-subtitle">
+                            <?php echo character_limiter($post->body,200).'<a href="">read more</a>' ?>
+                        </p>
+                    
                     <p class="post-meta">Tags <?php echo $post->tags; ?>Posted on  <?php echo $post->created_at; ?></p>
                 <?php endforeach ?>
                 </div>
