@@ -9,12 +9,12 @@
                 <?php foreach($posts as $post): ?>
                     
                         <h2 class="post-title" >
-                        <a href="">
+                        <a href="<?php echo site_url('front/postView/'.$post->id) ?>">
                             <?php echo $post->heading; ?>
                         </a>    
                         </h2>
                         <p class="post-subtitle">
-                            <?php echo character_limiter($post->body,200).'<a href="">read more</a>' ?>
+                            <?php echo character_limiter($post->body,200)?>.'<a href="<?php echo site_url('front/postView/'.$post->id) ?>">read more</a>' 
                         </p>
                     
                     <p class="post-meta">Tags <?php echo $post->tags; ?>Posted on  <?php echo $post->created_at; ?></p>
