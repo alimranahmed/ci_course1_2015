@@ -20,4 +20,19 @@ class front extends CI_Controller{
 		$this->load->view("frontend/v_home",$data);
 		$this->load->view("frontend/v_footer"); 
 	} 
+	public function postView($id){
+
+
+		$this->M_front->frontPost($id);
+	
+		$data = array(
+				"posts" => $this->M_front->frontPost($id),
+
+			);
+
+
+		$this->load->view("frontend/v_header");
+		$this->load->view("frontend/frontpost",$data);
+		$this->load->view("frontend/v_footer"); 
+	}
 }
