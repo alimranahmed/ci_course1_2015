@@ -51,7 +51,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="<?php echo site_url('front'); ?>">Home</a>
                     </li>
                     <li>
                         <a href="#">About</a>
