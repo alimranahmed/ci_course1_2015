@@ -23,10 +23,15 @@ class front extends CI_Controller{
 	public function postView($id){
 
 
+	
 		$this->M_front->frontPost($id);
+	
+		$commentList = $this->M_front->getComment($id);
+
 	
 		$data = array(
 				"posts" => $this->M_front->frontPost($id),
+				"comments" => $commentList,
 
 			);
 
@@ -35,4 +40,5 @@ class front extends CI_Controller{
 		$this->load->view("frontend/frontpost",$data);
 		$this->load->view("frontend/v_footer"); 
 	}
+	
 }
