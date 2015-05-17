@@ -20,7 +20,19 @@
                     <p class="post-meta">Tags <?php echo $post->tags; ?>Posted on  <?php echo $post->created_at; ?></p>
                 <?php endforeach ?>
                 </div>
-                <hr>
+            
+                <div>
+                    <?php foreach ($comments as $comment):?>
+                     <h5>your comment here </h5>   
+                    <tr class="info">
+                    
+                     <td><?php echo $comment->body; ?></td>
+                        
+                    </tr>
+                    <?php endforeach ?>   
+
+
+                </div>
                 
                 <!-- Pager -->
                 <ul class="pager">
@@ -33,4 +45,4 @@
         </div>
     </div>
 
-    <hr>
+    
