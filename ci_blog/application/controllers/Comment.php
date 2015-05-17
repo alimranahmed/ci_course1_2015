@@ -25,6 +25,9 @@ class Comment extends CI_Controller{
 		$this->load->view("backend/footer");
 
 	}
+
+	
+
 	public function delete($id){
 		$this->loginCheck();
 		$this->M_comment->delete($id);
