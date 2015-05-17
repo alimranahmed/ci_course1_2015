@@ -11,6 +11,8 @@ class M_comment extends CI_Model
 		$this->db->where("owner",$id);
 		return $this->db->get()->result();
 	}
+
+
 	public function delete($id){
 		$this->db->where("id",$id);
 		$this->db->delete('comments');	
