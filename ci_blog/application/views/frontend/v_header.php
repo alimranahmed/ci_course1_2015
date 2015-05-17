@@ -54,6 +54,9 @@
                         <a href="<?php echo site_url('front'); ?>">Home</a>
                     </li>
                     <li>
+                        <a href="http://localhost/ci_course1_2015/ci_blog/index.php/Login">Login</a>
+                    </li>
+                    <li>
                         <a href="#">About</a>
                     </li>
                     <li>
