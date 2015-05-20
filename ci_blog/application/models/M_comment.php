@@ -23,4 +23,7 @@ class M_comment extends CI_Model
 		$this->db->update("comments", $data);
 
 	}
+	public function addComment($newComment){
+		$this->db->select();
+		$this->db->insert("comments",$newComment);
 }
