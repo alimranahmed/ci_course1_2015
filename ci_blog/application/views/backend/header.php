@@ -61,6 +61,7 @@
                         </li>
                     </ul>
                 </li>
+                <li> <li><a href="<?php echo site_url('front'); ?>" class="pull-right">Frontend</a></li> </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $this->session->userdata("name");?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
