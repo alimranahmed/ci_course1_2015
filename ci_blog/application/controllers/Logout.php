@@ -2,6 +2,6 @@
 class Logout extends CI_Controller{
 	public function index(){
 		$this->session->sess_destroy();
-		redirect(site_url('login'));
+		redirect(site_url('front'));
 	}
 }
