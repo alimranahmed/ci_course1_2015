@@ -53,17 +53,22 @@
                     <li>
                         <a href="<?php echo site_url('front'); ?>">Home</a>
                     </li>
-                    <li>
-                        <a href="http://localhost/ci_course1_2015/ci_blog/index.php/Login">Login</a>
-                    </li>
+                    
                     <li>
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">Sample Post</a>
+                        <a href="#">Contact</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <?php if($this->session->userdata("user_id")): ?>
+                            <li><a href="<?php echo site_url('Dashboard'); ?>" class="pull-right">Dashboard</a></li>
+                            <li><a class="nav navbar-nav navbar-right"><?php echo $this->session->userdata("name");?></a></li>
+                            <li><a href="<?php echo site_url('Logout'); ?>" class="pull-right">Logout</a></li>
+                        <?php else: ?>
+                            <li><a href="<?php echo site_url('Login'); ?>">Login</a></li>
+                            <li><a  href="<?php echo site_url('Registration') ?>" >Registration</a></li>
+                        <?php endif ?>
                     </li>
                 </ul>
             </div>
