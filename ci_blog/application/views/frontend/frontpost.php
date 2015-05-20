@@ -9,10 +9,10 @@
        
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            
+            <?php foreach($posts as $post): ?>
                 <div class="post-preview">
                     
-                <?php foreach($posts as $post): ?>
+                
                         <h2 class="post-title" >
                         
                             <?php echo $post->heading; ?>
@@ -23,12 +23,12 @@
                         </p>
                     
                     <p class="post-meta">Tags <?php echo $post->tags; ?>Posted on  <?php echo $post->created_at; ?></p>
-                <?php endforeach ?>
+               
                 </div>
             
                 <div>
                     <?php foreach ($comments as $comment):?>
-                     <h5>your comment here </h5>   
+                     <h5>Comments </h5>   
                     <tr class="info">
                     
                      <td><?php echo $comment->body; ?></td>
@@ -39,19 +39,31 @@
 
 
                 </div>
+                <hr>
                 <div>
-                    <form method='post'>
-                          
-                          Comment:<br>
-                          <textarea name='comment' id='comment'></textarea><br />
 
-
-                          <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
-
-                          <input type='submit' value='Submit' />  
-                    </form>
+                    <?php if($this->session->userdata("user_id")): ?>
+                        <h5 class="text-success"><?php echo $this->session->flashdata("successMsg"); ?></h5>
+                         <div class="row">
+                            <div class="col-lg-6">
+                                <form method="post" action="<?php echo site_url('PostComment/add'.$post->id);?>">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="10" name="body" placeholder="Write you connent here..."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="submit" value="Create" class="btn btn-info">
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    <?php else: ?>
+                        <a href="<?php echo site_url('Login'); ?>"> Login</a>
+                        <a  href="<?php echo site_url('Registration') ?>" >Registration</a>
+                    <?php endif ?>
+                    
                 </div>
-                
+                 <?php endforeach ?>
                 <!-- Pager -->
                 <ul class="pager">
                     <li class="next">
